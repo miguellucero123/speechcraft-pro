@@ -16,6 +16,7 @@ import { loadPersistedHistory, usePersistedState } from './composables/usePersis
 import { useI18n } from 'vue-i18n'
 import { getLocaleForRegion } from './i18n'
 import Topbar from './components/layout/Topbar.vue'
+import LoginView from './components/auth/LoginView.vue'
 
 const ConfigPanel = defineAsyncComponent(() =>
   import('./components/config/ConfigPanel.vue')
@@ -28,6 +29,7 @@ const BuilderView = defineAsyncComponent(() =>
 )
 
 // ─── Estado global ───
+const authenticated = ref(false)
 const view = ref('builder')
 const tab = ref('caso')
 const loading = ref(false)
@@ -189,9 +191,12 @@ provide('fmt', fmt)
 
 <template>
   <div id="app">
-    <Topbar :view="view" @update:view="view = $event" />
+    <LoginView v-if="!authenticated" @login="authenticated = true" />
 
-    <div class="workspace">
+    <template v-else>
+      <Topbar :view="view" @update:view="view = $event" />
+
+      <div class="workspace">
       <ConfigPanel v-model:tab="tab" :loading="loading" @generate="generate" />
 
       <main class="panel-right" role="main" aria-label="Vista principal: Builder o Prompt">
@@ -200,9 +205,10 @@ provide('fmt', fmt)
       </main>
     </div>
 
-    <div v-if="toast.show" class="toast" :class="toast.cls">
-      <span>{{ toast.ico }}</span>
-      <span>{{ toast.msg }}</span>
-    </div>
+      <div v-if="toast.show" class="toast" :class="toast.cls">
+        <span>{{ toast.ico }}</span>
+        <span>{{ toast.msg }}</span>
+      </div>
+    </template>
   </div>
 </template>

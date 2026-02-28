@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "npm run build && npx netlify-cli deploy --prod --dir=dist",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{vue,js,css,json}\"",
     "typecheck": "vue-tsc --noEmit",
