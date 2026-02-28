@@ -1,0 +1,66 @@
+{
+  "common": {
+    "generados": "Generados",
+    "fases": "Fases",
+    "organismo": "Organismo",
+    "ultimo": "Último",
+    "anterior": "Anterior",
+    "siguiente": "Siguiente",
+    "salir": "Salir"
+  },
+  "builder": {
+    "empty": {
+      "titulo": "Listo para entrenar",
+      "desc": "Configura el caso en el panel izquierdo y genera un speech normativo profesional con IA. Basado en la base de conocimiento reclamos.txt."
+    },
+    "loading": "Construyendo speech...",
+    "actions": {
+      "imprimir": "Imprimir speech",
+      "copiar": "Copiar speech al portapapeles",
+      "json": "Guardar speech como JSON",
+      "word": "Exportar a Word",
+      "pdf": "Exportar a PDF",
+      "simulacro": "Reproducir simulacro de llamada",
+      "anterior": "Fase anterior",
+      "siguienteFase": "Siguiente fase",
+      "autoAvance": "Autoavance cada 6 segundos",
+      "pausar": "Pausar"
+    },
+    "toast": {
+      "speechCopiado": "Speech copiado",
+      "guardadoJson": "Guardado como JSON",
+      "exportadoWord": "Exportado a Word",
+      "exportadoPdf": "Exportado a PDF",
+      "error": "Error",
+      "errorExportar": "Error al exportar"
+    },
+    "historial": "Historial",
+    "resumenCaso": "Resumen del Caso",
+    "simulacro": {
+      "titulo": "Simulacro",
+      "fase": "Fase"
+    }
+  },
+  "config": {
+    "estructuraSpeech": "Estructura del Speech",
+    "complejidad": "Complejidad",
+    "basico": "Básico",
+    "medio": "Medio",
+    "avanzado": "Avanzado",
+    "nFases": "N° de Fases",
+    "fases": "fases",
+    "elementosIncluir": "Elementos a Incluir",
+    "idiomaEstilo": "Idioma y Estilo",
+    "registroLenguaje": "Registro de Lenguaje",
+    "formal": "Formal — Normativo",
+    "cordial": "Cordial — Empático",
+    "coloquial": "Coloquial — Natural",
+    "contextoRegional": "Contexto Regional",
+    "region": {
+      "CL": "🇨🇱 Chile (por defecto)",
+      "CO": "🇨🇴 Colombia",
+      "MX": "🇲🇽 México",
+      "AR": "🇦🇷 Argentina"
+    }
+  }
+}

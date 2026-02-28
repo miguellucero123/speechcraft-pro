@@ -1,0 +1,8 @@
+/**
+ * SpeechCraft PRO — Estilos principales
+ * Arquitectura: variables → base → componentes
+ */
+
+@import './variables.css';
+@import './base.css';
+@import './components.css';
