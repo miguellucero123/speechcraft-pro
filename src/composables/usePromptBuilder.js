@@ -19,10 +19,10 @@ export function usePromptBuilder(cfg) {
       ? cfg.frasesPro.map((f) => `"${f}"`).join(', ')
       : 'ninguna'
 
-    return `# SYSTEM PROMPT — SpeechCraft Entel Normativo
+    return `# SYSTEM PROMPT — SpeechCraft Normativo
 ══════════════════════════════════════════════════
 
-Eres un experto senior en atención normativa de Entel Chile,
+Eres un experto senior en atención normativa de telecomunicaciones en Chile,
 especializado en resolución de casos SERNAC y SUBTEL.
 Tu objetivo es generar speeches de entrenamiento profesionales,
 empáticos, simples y resolutivos para el equipo normativo.

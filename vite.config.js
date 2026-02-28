@@ -14,7 +14,7 @@ export default defineConfig({
       manifest: {
         name: 'SpeechCraft PRO',
         short_name: 'SpeechCraft',
-        description: 'Prompt Engine para speeches normativos Entel (SERNAC/SUBTEL)',
+        description: 'Prompt Engine para speeches normativos (SERNAC/SUBTEL)',
         theme_color: '#f0a500',
         background_color: '#0d0d12',
         display: 'standalone',

@@ -16,7 +16,7 @@ const tones = inject('tones')
           <option value="">Seleccionar organismo...</option>
           <option value="SERNAC">SERNAC — Protección al Consumidor</option>
           <option value="SUBTEL">SUBTEL — Telecomunicaciones</option>
-          <option value="INTERNO">Gestión Interna Entel</option>
+          <option value="INTERNO">Gestión Interna</option>
         </select>
       </div>
     </div>
@@ -76,7 +76,7 @@ const tones = inject('tones')
         v-model="cfg.caso"
         class="f-textarea"
         rows="5"
-        placeholder="Ej: Cliente compró Smartwatch en Tienda Torre Entel hace 2 días, pantalla presenta falla de touch..."
+        placeholder="Ej: Cliente compró Smartwatch en tienda hace 2 días, pantalla presenta falla de touch..."
       ></textarea>
     </div>
 

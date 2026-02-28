@@ -24,27 +24,27 @@ const RESPUESTAS_POR_SERVICIO = {
   MOVIL_LINEA_DATOS:
     'Las mediciones que realizaste son un antecedente válido. Vamos a escalar una revisión técnica de la cobertura en tu zona. Si se confirma la deficiencia, corresponde una compensación proporcional. Plazo de revisión 48 horas hábiles.',
   PORTABILIDAD:
-    'Una portabilidad sin autorización es una falta grave. Gestionamos la reversión para devolverte tu número a Entel. Plazo 24 a 48 horas hábiles. Los días sin servicio serán compensados.',
+    'Una portabilidad sin autorización es una falta grave. Gestionamos la reversión para devolverte tu número. Plazo 24 a 48 horas hábiles. Los días sin servicio serán compensados.',
   PREPAGO_SALDO:
     'Con el comprobante del cargo bancario acreditamos el saldo de forma manual. En un plazo de 2 horas debería reflejarse en tu línea. Si el pack no se activó, lo activamos ahora y extendemos la vigencia sin costo.',
   PREPAGO_PACKS:
     'El dinero fue descontado y el pack no se activó, eso no está bien. Activamos el pack ahora mismo y si ya venció el período por el error, lo extendemos sin costo.',
   PREPAGO_CHIP:
-    'El bloqueo por inactividad se puede revertir. Puedes acercarte a cualquier tienda Entel con tu cédula y te reactivan o asignan un chip nuevo manteniendo tu número. Una migración sin autorización se revierte y eliminamos todos los cargos.',
+    'El bloqueo por inactividad se puede revertir. Puedes acercarte a cualquier tienda con tu cédula y te reactivan o asignan un chip nuevo manteniendo tu número. Una migración sin autorización se revierte y eliminamos todos los cargos.',
   HOGAR_INTERNET:
     'Dos días sin servicio es inaceptable. Genero una orden técnica prioritaria. Un técnico se comunicará contigo en las próximas 24 horas hábiles. Los días sin servicio serán descontados de tu próxima cuenta.',
   HOGAR_TV:
     'Verificamos que tu paquete esté correctamente activado y generamos una orden técnica para restablecer los canales. Plazo máximo 24 horas hábiles. Los días sin acceso serán descontados.',
   HOGAR_TECNICO:
-    'Cualquier daño causado por nuestro personal en tu domicilio es responsabilidad de Entel. Coordinamos la reparación de los daños sin costo. Plazo de respuesta 5 días hábiles. Documenta los daños con fotografías si es posible.',
+    'Cualquier daño causado por nuestro personal en tu domicilio es responsabilidad nuestra. Coordinamos la reparación de los daños sin costo. Plazo de respuesta 5 días hábiles. Documenta los daños con fotografías si es posible.',
   CONTRATOS:
     'Un alza de tarifa debe ser notificada con al menos 30 días de anticipación. Si no fuiste notificado tienes derecho a mantener el precio original o a terminar el contrato sin multa. Es tu derecho recibir una copia de tu contrato.',
   FRAUDE:
-    'Bloqueamos el chip duplicado de inmediato y generamos un nuevo SIM a tu nombre. Escalamos el caso al área de seguridad para investigar. Puedes acercarte a cualquier tienda Entel con tu cédula para el nuevo chip. Te recomiendo denunciar en tu banco y en la PDI.',
+    'Bloqueamos el chip duplicado de inmediato y generamos un nuevo SIM a tu nombre. Escalamos el caso al área de seguridad para investigar. Puedes acercarte a cualquier tienda con tu cédula para el nuevo chip. Te recomiendo denunciar en tu banco y en la PDI.',
   ESPECIAL:
     'Para el término por fallecimiento necesitamos el certificado de defunción y tu documento como familiar directo. Una vez recibidos, el contrato se termina sin multa y los cobros se detienen desde la fecha de fallecimiento. Un reporte injustificado en DICOM genera derecho a compensación.',
   DIGITAL:
-    'Revisamos el estado de tu cuenta digital y escalamos el problema técnico. Mientras tanto puedes acceder desde la página web de Entel con las mismas credenciales. Con el comprobante del cargo acreditamos el saldo manualmente en 2 horas.',
+    'Revisamos el estado de tu cuenta digital y escalamos el problema técnico. Mientras tanto puedes acceder desde la página web con las mismas credenciales. Con el comprobante del cargo acreditamos el saldo manualmente en 2 horas.',
 }
 
 /** Objeciones típicas según tono del cliente */
@@ -76,7 +76,7 @@ export function generateSpeechByTemplate(cfg, svcLabels) {
       dialogos: [
         {
           speaker: cfg.ejecutivo,
-          texto: `Buenas tardes, ¿hablo con ${cfg.cliente}? Soy ${cfg.ejecutivo} del Área ${cfg.area} de Entel, te llamo por el requerimiento ${cfg.organismo} N°${cfg.nReq}. Necesito validar tu nombre completo y RUT.`,
+          texto: `Buenas tardes, ¿hablo con ${cfg.cliente}? Soy ${cfg.ejecutivo} del Área ${cfg.area}, te llamo por el requerimiento ${cfg.organismo} N°${cfg.nReq}. Necesito validar tu nombre completo y RUT.`,
         },
         { speaker: cfg.cliente, texto: `Sí, soy yo. ${casoCorto}` },
         {

@@ -5,14 +5,14 @@
 El archivo `reclamos.txt` se encuentra en el directorio raíz del repositorio:
 
 ```
-Script_Entel/
+Proyecto/
 ├── reclamos.txt      # Base de conocimiento original
 └── speechcraft/      # App SpeechCraft PRO
 ```
 
 ## Contenido
 
-Documento de referencia con 60+ speeches normativos Entel, organizados por categorías (equipos, cobros, línea, prepago, hogar, fraude, etc.) con diálogos reales entre ejecutivos y clientes.
+Documento de referencia con 60+ speeches normativos, organizados por categorías (equipos, cobros, línea, prepago, hogar, fraude, etc.) con diálogos reales entre ejecutivos y clientes.
 
 ## Relación con el código
 

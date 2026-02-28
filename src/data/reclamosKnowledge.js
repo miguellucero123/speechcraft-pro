@@ -5,7 +5,7 @@
  */
 
 export const RECLAMOS_META = {
-  titulo: 'Reclamos Entel | Todos los Servicios | SERNAC — SUBTEL',
+  titulo: 'Reclamos | Todos los Servicios | SERNAC — SUBTEL',
   ejecutivo: 'Juan',
   contexto: 'Clientes Ofuscados',
 }
@@ -154,7 +154,7 @@ export const CASOS_POR_CATEGORIA = {
   ],
   // 🌐 12. SERVICIOS DIGITALES (3 casos)
   DIGITAL: [
-    'App Entel No Funciona — Cliente No Puede Ver su Cuenta',
+    'App No Funciona — Cliente No Puede Ver su Cuenta',
     'Recarga por App Fallida y Dinero Descontado',
     'Compra de Pack por App Cobrada Dos Veces',
   ],

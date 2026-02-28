@@ -1,6 +1,6 @@
 # SpeechCraft PRO — Prompt Engine
 
-Motor de prompts para generar **speeches de entrenamiento normativo** Entel (SERNAC · SUBTEL), basado en la base de conocimiento de `reclamos.txt`.
+Motor de prompts para generar **speeches de entrenamiento normativo** (SERNAC · SUBTEL), basado en la base de conocimiento de `reclamos.txt`.
 
 ## 🚀 Inicio Rápido
 
@@ -96,4 +96,4 @@ El proyecto incluye `netlify.toml` y `public/_redirects` listos para Netlify.
 
 ## 📄 Licencia
 
-Uso interno Entel / AIEP.
+Uso interno AIEP.

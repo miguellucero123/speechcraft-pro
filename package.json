@@ -1,7 +1,7 @@
 {
   "name": "speechcraft-pro",
   "version": "1.0.0",
-  "description": "Prompt Engine para generar speeches normativos Entel (SERNAC/SUBTEL)",
+  "description": "Prompt Engine para generar speeches normativos (SERNAC/SUBTEL)",
   "private": true,
   "type": "module",
   "scripts": {
@@ -42,7 +42,6 @@
   },
   "keywords": [
     "vue",
-    "entel",
     "sernac",
     "subtel",
     "speech",
