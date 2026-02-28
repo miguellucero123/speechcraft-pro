@@ -82,6 +82,18 @@ speechcraft/
 - `npm run test:watch` — Tests en modo watch
 - `npm run test:e2e` — Tests e2e (Playwright)
 
+## 🚀 Despliegue en Netlify
+
+El proyecto incluye `netlify.toml` y `public/_redirects` listos para Netlify.
+
+1. Crea un repositorio en GitHub y sube el proyecto.
+2. En [Netlify](https://app.netlify.com) → **Add new site** → **Import an existing project**.
+3. Conecta GitHub y selecciona el repositorio.
+4. Netlify detectará automáticamente:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+5. Despliega.
+
 ## 📄 Licencia
 
 Uso interno Entel / AIEP.
