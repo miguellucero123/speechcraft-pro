@@ -4,14 +4,10 @@ import '@/styles/index.css'
 import { i18n } from './i18n'
 import App from './App.vue'
 
-// Limpiar Service Workers de extensiones que interfieren con localhost (Response body already used, etc.)
-if (import.meta.env.DEV && navigator.serviceWorker) {
+// Desregistrar Service Workers legacy para que los usuarios vean siempre la versión actual
+if (navigator.serviceWorker) {
   navigator.serviceWorker.getRegistrations().then((regs) => {
-    regs.forEach((reg) => {
-      if (reg.scope.includes('localhost') || reg.scope.includes('127.0.0.1')) {
-        reg.unregister().then(() => console.log('[SpeechCraft] SW externo desregistrado'))
-      }
-    })
+    regs.forEach((reg) => reg.unregister())
   })
 }
 

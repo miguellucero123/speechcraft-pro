@@ -10,6 +10,8 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Deshabilitado temporalmente: el SW servía versión antigua y ocultaba la pestaña Carta
+      disable: true,
       includeAssets: ['vite.svg'],
       manifest: {
         name: 'SpeechCraft PRO',
