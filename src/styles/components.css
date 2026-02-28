@@ -134,6 +134,9 @@
   flex: 1;
   min-height: calc(100vh - 60px);
 }
+.workspace.full-width {
+  grid-template-columns: 1fr;
+}
 
 /* ── Panel izquierdo ── */
 .panel-left {

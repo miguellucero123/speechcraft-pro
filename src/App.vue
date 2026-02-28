@@ -27,6 +27,9 @@ const PromptEngine = defineAsyncComponent(() =>
 const BuilderView = defineAsyncComponent(() =>
   import('./components/builder/BuilderView.vue')
 )
+const CartaSernacView = defineAsyncComponent(() =>
+  import('./components/carta/CartaSernacView.vue')
+)
 
 // ─── Estado global ───
 const authenticated = ref(false)
@@ -196,11 +199,17 @@ provide('fmt', fmt)
     <template v-else>
       <Topbar :view="view" @update:view="view = $event" />
 
-      <div class="workspace">
-      <ConfigPanel v-model:tab="tab" :loading="loading" @generate="generate" />
+      <div class="workspace" :class="{ 'full-width': view === 'carta' }">
+      <ConfigPanel
+        v-if="view !== 'carta'"
+        v-model:tab="tab"
+        :loading="loading"
+        @generate="generate"
+      />
 
-      <main class="panel-right" role="main" aria-label="Vista principal: Builder o Prompt">
+      <main class="panel-right" role="main" aria-label="Vista principal: Builder, Prompt o Carta">
         <PromptEngine v-if="view === 'prompt'" @generate="generate" />
+        <CartaSernacView v-else-if="view === 'carta'" />
         <BuilderView v-else />
       </main>
     </div>

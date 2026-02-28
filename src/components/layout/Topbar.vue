@@ -32,6 +32,16 @@ defineEmits(['update:view'])
       >
         📝 Prompt
       </button>
+      <button
+        type="button"
+        class="nav-btn"
+        :class="{ active: view === 'carta' }"
+        :aria-label="view === 'carta' ? 'Vista Carta SERNAC (actual)' : 'Ver Carta SERNAC'"
+        :aria-current="view === 'carta' ? 'page' : undefined"
+        @click="$emit('update:view', 'carta')"
+      >
+        📄 Carta SERNAC
+      </button>
       <span class="pill pill-amber">SERNAC · SUBTEL</span>
       <span class="pill pill-green">AI v4</span>
     </div>
