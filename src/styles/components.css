@@ -115,6 +115,14 @@
   border-color: rgba(240, 165, 0, 0.4);
   color: var(--amber2);
 }
+.nav-btn.nav-carta {
+  border-color: rgba(34, 211, 238, 0.3);
+}
+.nav-btn.nav-carta:hover,
+.nav-btn.nav-carta.active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
 .nav-btn:focus-visible,
 .ptab:focus-visible,
 .mode-opt:focus-visible,
