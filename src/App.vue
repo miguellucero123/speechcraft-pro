@@ -33,7 +33,7 @@ const CartaSernacView = defineAsyncComponent(() =>
 
 // ─── Estado global ───
 const authenticated = ref(false)
-const view = ref('builder')
+const view = ref('carta')
 const tab = ref('caso')
 const loading = ref(false)
 const current = ref(null)

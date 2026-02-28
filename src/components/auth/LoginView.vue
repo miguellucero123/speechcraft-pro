@@ -32,6 +32,7 @@ function onSubmit() {
         <div class="brand-mark"><span>🎙</span></div>
         <h1>SpeechCraft<sup>PRO</sup></h1>
         <p class="subtitle">Ingresa tus credenciales para acceder</p>
+        <p class="subtitle-hint">Tras iniciar sesión podrás crear cartas SERNAC, speeches y más.</p>
       </div>
 
       <form class="login-form" @submit.prevent="onSubmit">
@@ -123,6 +124,12 @@ function onSubmit() {
   color: var(--t3);
   font-size: 0.9rem;
   margin: 0;
+}
+
+.subtitle-hint {
+  color: var(--t4);
+  font-size: 0.8rem;
+  margin: 0.25rem 0 0;
 }
 
 .login-form {
